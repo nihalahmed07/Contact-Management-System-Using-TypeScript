@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Managment System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f5b6191954.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1><i class="fa-solid fa-address-book"></i> Contact Book</h1>
+        <div class="form-container">
+            <h2>Add Contact</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Name" required />
+                <input type="text" id="phone" placeholder="Phone" required />
+                <input type="email" id="email" placeholder="Email" required />
+                <select id="label">
+                    <option value="Family">Family</option>
+                    <option value="Friend">Friend</option>
+                    <option value="Business">Business</option>
+                    <option value="Work">Work</option>
+                </select>
+                <button type="submit">Add Contact</button>
+            </form>
+        </div>
+        <div class="contact-list">
+            <h2>Contacts</h2>
+            <table id="contactTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                        <th>Label</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./dist/index.js"></script>
+
+</body>
+
+</html>
